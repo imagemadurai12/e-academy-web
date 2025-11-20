@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+:root{
+  --primary-color:#FB6818;
+  --secondary-color:#252525;
+  --tertiary-color:#FFFFFF;
+  --primary-bg-color:#FB6818;
+  --secondary-bg-color:#252525;
+  --tertiary-bg-color:#FFFFFF;
+  --fs-40:40px;
+  --fs-24:24px;
+  --fs-20:20px;
+  --fs-18:18px;
+  --fs-16:16px;
+  --fs-14:14px;
+  --fw-bold:700;
+  --fw-semi-bold:600;
+  --fw-normal:400;
+  --fw-thin:300;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 70%;
+}
+
+.primary-btn{
+  font-size: var(--fs-18);
+  padding: 15px 35px;
+  color: var(--tertiary-color);
+  border-radius: 8px;
+  background-color: var(--primary-bg-color);
+  transition-duration: 0.7s;
+  text-decoration: none;
+}
+.primary-btn:hover{
+  background-color: var(--tertiary-bg-color);
+  color: var(--secondary-color);
+}
+
+.secondary-btn{
+  font-size: var(--fs-18);
+  padding: 15px 35px;
+  color: var(--secondary-color);
+  border-radius: 8px;
+  background-color: var(--tertiary-bg-color);
+  transition-duration: 0.7s;
+  text-decoration: none;
+}
+.secondary-btn:hover{
+  background-color: var(--secondary-bg-color);
+  color: var(--tertiary-color);
+}
+
+
+
+/* Media query */
+@media only screen and (max-width:1600px)
+{
+  .wrapper {
+      width: 80%;
+  } 
+}
+
+@media only screen and (max-width:1400px)
+{
+  .wrapper {
+      width: 90%;
+  }
+}
+
+@media only screen and (max-width:950px)
+{
+  .primary-btn {
+    padding: 10px 25px;
+  }
+}
+
